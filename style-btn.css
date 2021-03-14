@@ -1,0 +1,30 @@
+/** Buttons */
+
+button.btn,
+a.btn {
+   display: inline-block;
+   font-size: 0.95rem;
+   font-family: unset;
+   height: 1.5rem;
+   line-height: 1.5rem;
+   padding: 0.15rem 0.5rem;
+   background: white;
+   border: 1px solid #e7e7e7;
+   border-radius: 0.2rem;
+   text-align: center;
+   cursor: pointer;
+   color: #444;
+   text-decoration: none;
+   box-sizing: content-box;
+   transition: background-color 250ms;
+}
+
+   button.btn:hover,
+   a.btn:hover {
+      background: #e7e7e7;
+      border-color: #d1d1d1;
+   }
+
+   a.btn:hover {
+      text-decoration: none;
+   }

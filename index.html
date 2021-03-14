@@ -1,9 +1,208 @@
 <!doctype html>
 <html>
 <head>
-	<title>Philip Schlup Home</title>
+	<title>Philip Schlup</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-flex.css">
+	<link rel="stylesheet" href="style-btn.css">
 </head>
 <body>
-<h3>Philip Schlup Home</h3>
+	<div class="header">
+		<div class="page-center">
+			<div class="flex-row flex-space-between">
+				<div class="title">Philip Schlup Home</div>
+				<div class="items-right">
+					<button class="btn contact-button" data-action="email" data-account="philip.schlup" data-service="gmail.com">Email</button>
+					<a class="btn contact-button" href="https://www.linkedin.com/in/philip-schlup/">LinkedIn</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Images -->
+
+	<div class="main">
+		<div class="page-center">
+			<div class="block">
+				Illustrations of scientific experiments and results.
+			</div>
+
+			<div class="block-heading">
+				3D POV-Ray / Blender
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/img700Hol.jpg" />
+			</div>
+			<div class="caption">
+				Holographic microscopy and object reconstruction.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/coltrims.jpg" />
+			</div>
+			<div class="caption">
+				Electron and ion imaging of single atom photoionization.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/optical setup.jpg" />
+			</div>
+			<div class="caption">
+				Experimental setup of difference frequency generation.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/pump-probe.jpg" />
+			</div>
+			<div class="caption">
+				Synthetic aperture experiment to measure vibrational motion.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/img700Cbs.jpg" />
+			</div>
+			<div class="caption">
+				Experimental setup of cross beam spectrometer.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/fiber-cap.jpg" />
+			</div>
+			<div class="caption">
+				Exploded assembly view of optical fiber end cap.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/shg-photomult.jpg" />
+			</div>
+			<div class="caption">
+				Third-harmonic generation microscopy with photomultiplier detector.
+			</div>
+
+
+			<div class="block-heading">
+				3D OpenGL
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/turtle.jpg" />
+			</div>
+			<div class="caption">
+				Visual representation of electric field projections.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/opengl-setup.jpg" />
+			</div>
+			<div class="caption">
+				Tabletop laser assembly.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/img700Tre.jpg" />
+			</div>
+			<div class="caption">
+				3D fractal tree generation.
+			</div>
+
+			
+			<div class="block-heading">
+				Line art
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/biref-interference.jpg" />
+			</div>
+			<div class="caption">
+				Second-hardmonic generation and interference in birefringent crystal.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/efield projection.jpg" />
+			</div>
+			<div class="caption">
+				Light pulse electric field projections.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/lcd-drive.jpg" />
+			</div>
+			<div class="caption">
+				Measurement of phase response of liquid crystal using interference.
+			</div>
+		</div>
+
+		<!-- Animations -->
+
+		<div class="page-center">
+			<div class="block-heading">
+				Animations
+			</div>
+
+			<div class="figure">
+				<iframe width="420" height="236" src="https://www.youtube.com/embed/laiK6QRXiD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				Animation showing ion and electron spectroscopy of
+				single atom photoionization (COLTRIMS). The momentum of
+				each fragment is recorded via time-of-flight measurements,
+				which allows the ionization event to be reconstructed.
+				Rendered using POV-Ray (a long time ago).
+			</div>
+
+			<div class="figure">
+				<iframe width="420" height="236" src="https://www.youtube.com/embed/4-vWIyHDXNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				Animation illustrating three chromosomes 
+				in a cell undergoing mitosis.
+				Rendered in Blender.
+			</div>
+
+			<div class="figure">
+				<iframe width="420" height="236" src="https://www.youtube.com/embed/1XyDxCDN3iM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				DNA strand and the start of its assembly into chromosomes.
+				The animation is not intended to be scientifically accurate,
+				solely to indicate the vast quantity of individual elements
+				that make up DNA.
+			</div>
+
+
+
+
+
+
+			<div class="figure">
+				<iframe width="420" height="236" src="https://www.youtube.com/embed/c3PAMd2UJKw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				Whimsical instrument playing <em>The Flight of the Bumblebee</em>.
+				The clip was created programmatically by defining the
+				trajectory of a single note, and animating the complete set
+				using a MIDI file.
+			</div>
+		</div>
+	</div>
+<script>
+	(function (emailButtons) {
+		var triggerEmail = function (e) {
+			var el = e.target,
+				account = el.getAttribute("data-account"),
+				service = el.getAttribute("data-service"),
+				a = document.createElement("a");
+			a.setAttribute("href", `mailto:${account}@${service}`);
+			document.body.appendChild(a);
+			a.click();
+			a.parentElement.removeChild(a);
+		};
+
+		Array.prototype.forEach.call(emailButtons, function (el) {
+			el.addEventListener("click", triggerEmail);
+		});
+	}(document.querySelectorAll("[data-action='email']")));
+</script>
 </body>
 </html>
