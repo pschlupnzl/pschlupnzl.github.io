@@ -28,6 +28,10 @@ body {
    font-weight: bold;
 }
 
+.lasercanvas-button img {
+   max-width: 14px;
+   max-height: 14px;
+}
 
 /** Main */
 
