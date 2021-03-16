@@ -5,6 +5,16 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style-flex.css">
 	<link rel="stylesheet" href="style-btn.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-S44SL26QT5"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-S44SL26QT5');
+	</script>
 </head>
 <body>
 	<div class="header">
@@ -27,16 +37,46 @@
 
 	<div class="main">
 		<div class="page-center">
+			<div class="block-heading">
+				Welcome
+			</div>
+
 			<div class="block">
-				Illustrations of scientific experiments and results.
+				<p>
+					My passions are science, software, and the visual media.
+				</p>
+				<p>
+					I have been an experimental photonics researcher, using lasers
+					to study atoms, molecules, and cells.
+
+					I have been a software engineer building tools for teaching
+					math, science, and languages to students old and young.
+
+					I have been a film school student, shooting, editing, and
+					crewing short film shoots.
+				</p>
+				<p>
+					I want to build solutions that make peoples' lives easier,
+					more efficient, and more fun.
+					
+					I want to write software that's so interactive and intuitive
+					that you can use it almost with a sense of touch.
+					
+					I want to create visual media that entertains and informs,
+					making complex concepts accessible without dumbing them down.
+				</p>
 			</div>
 
 			<div class="block-heading">
+				Illustrations
+			</div>
+
+			<div class="block-subheading">
 				3D POV-Ray / Blender
 			</div>
 
 			<div class="figure">
-				<img src="portfolio/images/img700Hol.jpg" />
+				<img src="portfolio/images/HolographyPosterFigure_1600.png" />
 			</div>
 			<div class="caption">
 				Holographic microscopy and object reconstruction. The 3d shape is
@@ -51,7 +91,7 @@
 			</div>
 
 			<div class="figure">
-				<img src="portfolio/images/optical setup.jpg" />
+				<img src="portfolio/images/DFGSetup_hires.png" />
 			</div>
 			<div class="caption">
 				Experimental setup of difference frequency generation.
@@ -86,7 +126,7 @@
 			</div>
 
 
-			<div class="block-heading">
+			<div class="block-subheading">
 				3D OpenGL
 			</div>
 
@@ -112,8 +152,15 @@
 			</div>
 
 			
-			<div class="block-heading">
+			<div class="block-subheading">
 				Line art
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/images/CellSignalingFigure_Shaded.png" />
+			</div>
+			<div class="caption">
+				Signaling molecules exchanged between cells.
 			</div>
 
 			<div class="figure">
@@ -138,7 +185,10 @@
 			</div>
 		</div>
 
-		<!-- Animations -->
+
+		<!-- 
+			Animations
+		-->
 
 		<div class="page-center">
 			<div class="block-heading">
@@ -204,11 +254,6 @@
 				Rendered using C++ and OpenGL.
 			</div>
 
-
-
-
-
-
 			<div class="figure">
 				<iframe width="420" height="236" src="https://www.youtube.com/embed/c3PAMd2UJKw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
@@ -217,6 +262,66 @@
 				The clip was created programmatically by defining the
 				trajectory of a single note, and animating the complete set
 				using a MIDI file.
+			</div>
+		</div>
+
+		<!--
+			Software
+		-->
+
+		<div class="page-center">
+			<div class="block-heading">
+				Software
+			</div>
+
+			<div class="block-subheading">
+				LaserCanvas
+			</div>
+
+			<div class="block">
+				The web project is written in vanilla JavaScript. The source code is on 
+				<a href="https://github.com/pschlupnzl/lasercanvas-web">GitHub</a>.
+			</div>
+
+			<div class="block-subheading">
+				Teaching tools
+			</div>
+
+			<div class="block">
+
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/teaching/flash_frog.jpg" />
+			</div>
+			<div class="caption">
+				ActionScript (Flash) simulator of the 
+				<a href="https://en.wikipedia.org/wiki/Frequency-resolved_optical_gating">frequency-resolved optical gating</a>
+				technique to measure laser pulses. The yellow circles represent
+				handles that can be dragged to control the simulation parameters.
+			</div>
+
+			<div class="block-subheading">
+				Lab software
+			</div>
+
+			<div class="block">
+				<p>
+					Lab software written in Win32 C++ to communicate with spectrometers,
+					stepper motors, and data acquisition boards. These were used
+					to measure experimental data. Data processing and visualization
+					included on-screen draggable controls to adjust processing
+					parameters in real time.
+				</p>
+			</div>
+			<div class="figure">
+				<img src="portfolio/software/eagle.png" />
+			</div>
+			<div class="caption">
+				Data acquisition software, here used to measure photomultiplier
+				signal scanned over a 2d mask. The small white control handles
+				can be moved in real time. The software combines data acquired 
+				in multiple layers to form 3D images.
 			</div>
 		</div>
 	</div>
