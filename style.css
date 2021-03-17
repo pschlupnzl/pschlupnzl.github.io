@@ -15,6 +15,14 @@ body {
    margin: 0 auto;
 }
 
+.monospace {
+   font-family: monospace;
+}
+
+.quote-indent {
+   margin-right: 8%;
+   margin-left: 8%;
+}
 
 /** Header */
 
@@ -67,7 +75,7 @@ body {
 
    .main .caption {
       padding: 0.25em 0;
-      margin-top: -0.25em;
+      margin: -0.25em 5% 1em 5%;
       color: #666;
       font-style: italic;
       text-align: center;

@@ -26,7 +26,7 @@
 						<img src="lasercanvas/favicon.png" />
 						LaserCanvas
 					</a>
-					<button class="btn contact-button" data-action="email" data-account="philip.schlup" data-service="gmail.com">Email</button>
+					<a class="btn contact-button" href="mailto:philip.schlup@gmail.com">Email</button>
 					<a class="btn contact-button" href="https://www.linkedin.com/in/philip-schlup/">LinkedIn</a>
 				</div>
 			</div>
@@ -301,18 +301,39 @@
 				Teaching tools
 			</div>
 
-			<div class="block">
-
+			<div class="figure">
+				<img src="portfolio/teaching/numbers.jpg" />
+			</div>
+			<div class="caption">
+				Tool for teaching numbers and place value, here localized to
+				te Reo Maori language. The tool was initially written in Flash / Actionscript
+				and subsequently rewritten in JavaScript.
 			</div>
 
 			<div class="figure">
 				<img src="portfolio/teaching/flash_frog.jpg" />
 			</div>
 			<div class="caption">
-				ActionScript (Flash) simulator of the 
+				Flash / Actionscript simulator of the 
 				<a href="https://en.wikipedia.org/wiki/Frequency-resolved_optical_gating">frequency-resolved optical gating</a>
 				technique to measure laser pulses. The yellow circles represent
 				handles that can be dragged to control the simulation parameters.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/teaching/quadratic-formula.svg" width="150" />
+				<div class="monospace quote-indent">
+					x equals minus b plus or minus the square root of,
+					b squared minus 4 ay c,
+					divided by 2 ay
+				</div>
+			</div>
+			<div class="caption">
+				This LaTeX-to-text processor parses an equation and outputs
+				text that is passed to a text-to-speech converter. Despite some
+				possible ambiguities, I chose to prefer a "natural" reading style,
+				rather than the explicit reading of parentheses and groups that other
+				equation readers employ.
 			</div>
 
 			<div class="block-subheading">
@@ -329,33 +350,15 @@
 				</p>
 			</div>
 			<div class="figure">
-				<img src="portfolio/software/eagle.png" />
+				<img src="portfolio/software/eagle.jpg" />
 			</div>
 			<div class="caption">
-				Data acquisition software, here used to measure photomultiplier
-				signal scanned over a 2d mask. The small white control handles
-				can be moved in real time. The software combines data acquired 
-				in multiple layers to form 3D images.
+				Data acquisition software, here used to measure optical
+				signals scanned over a 2d plane. The parameters can be adjusted
+				handles by manipulating control handles in real time. 
+				Multiple scans can be combined to form 3D images.
 			</div>
 		</div>
 	</div>
-<script>
-	(function (emailButtons) {
-		var triggerEmail = function (e) {
-			var el = e.target,
-				account = el.getAttribute("data-account"),
-				service = el.getAttribute("data-service"),
-				a = document.createElement("a");
-			a.setAttribute("href", `mailto:${account}@${service}`);
-			document.body.appendChild(a);
-			a.click();
-			a.parentElement.removeChild(a);
-		};
-
-		Array.prototype.forEach.call(emailButtons, function (el) {
-			el.addEventListener("click", triggerEmail);
-		});
-	}(document.querySelectorAll("[data-action='email']")));
-</script>
 </body>
 </html>
