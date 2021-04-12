@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Philip Schlup</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style-flex.css">
 	<link rel="stylesheet" href="style-btn.css">
@@ -32,9 +33,7 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Images -->
-
+	
 	<div class="main">
 		<div class="page-center">
 			<div class="block-heading">
@@ -66,7 +65,121 @@
 					making complex concepts accessible without dumbing them down.
 				</p>
 			</div>
+		</div>
 
+		<!--
+			Software
+		-->
+
+		<div class="page-center">
+			<div class="block-heading">
+				Software
+			</div>
+
+			<div class="block-subheading">
+				LaserCanvas
+			</div>
+
+			<div class="block">
+				<p>
+					Interactive modeling of laser resonators, aimed at researchers
+					and students.
+					The original project was written in Win32 C++.
+					A new version was written in vanilla JavaScript. The source code
+					is on <a href="https://github.com/pschlupnzl/lasercanvas-web">GitHub</a>.
+					See it in action: <a class="btn lasercanvas-button" href="lasercanvas/">LaserCanvas</a>
+				</p>
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/software/lcwex.png" />
+			</div>
+			<div class="caption">
+				Advanced features in LaserCanvas Web, including equations, variables,
+				and property graphs.
+			</div>
+
+			<div class="block-subheading">
+				e-Learning
+			</div>
+
+			<div class="block">
+				<p>
+					My professional software development career has allowed me to dedicate
+					almost ten years to building e-learning systems. The products aimed to
+					provide engaging and effective content to learners, intuitive
+					authoring platforms to content creators, and insightful reporting to
+					educators.
+				</p>
+			</div>
+
+			<div class="block-subheading">
+				Teaching tools
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/teaching/numbers.jpg" />
+			</div>
+			<div class="caption">
+				Tool for teaching numbers and place value, here localized to
+				te Reo Maori language. The tool was initially written in Flash / Actionscript
+				and subsequently rewritten in JavaScript.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/teaching/flash_frog.jpg" />
+			</div>
+			<div class="caption">
+				Flash / Actionscript simulator of the 
+				<a href="https://en.wikipedia.org/wiki/Frequency-resolved_optical_gating">frequency-resolved optical gating</a>
+				technique to measure laser pulses. The yellow circles represent
+				handles that can be dragged to control the simulation parameters.
+			</div>
+
+			<div class="figure">
+				<img src="portfolio/teaching/quadratic-formula.svg" width="150" />
+				<div class="monospace quote-indent">
+					x equals minus b plus or minus the square root of,
+					b squared minus 4 ay c,
+					divided by 2 ay
+				</div>
+			</div>
+			<div class="caption">
+				This LaTeX-to-text processor parses an equation and outputs
+				text that is passed to a text-to-speech converter. Despite some
+				possible ambiguities, I chose to prefer a "natural" reading style,
+				rather than the explicit reading of parentheses and groups that other
+				equation readers employ.
+			</div>
+
+			<div class="block-subheading">
+				Lab software
+			</div>
+
+			<div class="block">
+				<p>
+					Lab software written in Win32 C++ to communicate with spectrometers,
+					stepper motors, and data acquisition boards. These were used
+					to measure experimental data. Data processing and visualization
+					included on-screen draggable controls to adjust processing
+					parameters in real time.
+				</p>
+			</div>
+			<div class="figure">
+				<img src="portfolio/software/eagle.jpg" />
+			</div>
+			<div class="caption">
+				Data acquisition software, here used to measure optical
+				signals scanned over a 2d plane. The parameters can be adjusted
+				handles by manipulating control handles in real time. 
+				Multiple scans can be combined to form 3D images.
+			</div>
+		</div>
+
+		<!--
+			Images
+		-->
+		<div class="page-center">
 			<div class="block-heading">
 				Illustrations
 			</div>
@@ -265,100 +378,6 @@
 			</div>
 		</div>
 
-		<!--
-			Software
-		-->
-
-		<div class="page-center">
-			<div class="block-heading">
-				Software
-			</div>
-
-			<div class="block-subheading">
-				LaserCanvas
-			</div>
-
-			<div class="block">
-				<p>
-					Interactive modeling of laser resonators, aimed at researchers
-					and students.
-					The original project was written in Win32 C++.
-					A new version was written in vanilla JavaScript. The source code
-					is on <a href="https://github.com/pschlupnzl/lasercanvas-web">GitHub</a>.
-					See it in action: <a class="btn lasercanvas-button" href="lasercanvas/">LaserCanvas</a>
-				</p>
-			</div>
-
-			<div class="figure">
-				<img src="portfolio/software/lcwex.png" />
-			</div>
-			<div class="caption">
-				Advanced features in LaserCanvas Web, including equations, variables,
-				and property graphs.
-			</div>
-
-			<div class="block-subheading">
-				Teaching tools
-			</div>
-
-			<div class="figure">
-				<img src="portfolio/teaching/numbers.jpg" />
-			</div>
-			<div class="caption">
-				Tool for teaching numbers and place value, here localized to
-				te Reo Maori language. The tool was initially written in Flash / Actionscript
-				and subsequently rewritten in JavaScript.
-			</div>
-
-			<div class="figure">
-				<img src="portfolio/teaching/flash_frog.jpg" />
-			</div>
-			<div class="caption">
-				Flash / Actionscript simulator of the 
-				<a href="https://en.wikipedia.org/wiki/Frequency-resolved_optical_gating">frequency-resolved optical gating</a>
-				technique to measure laser pulses. The yellow circles represent
-				handles that can be dragged to control the simulation parameters.
-			</div>
-
-			<div class="figure">
-				<img src="portfolio/teaching/quadratic-formula.svg" width="150" />
-				<div class="monospace quote-indent">
-					x equals minus b plus or minus the square root of,
-					b squared minus 4 ay c,
-					divided by 2 ay
-				</div>
-			</div>
-			<div class="caption">
-				This LaTeX-to-text processor parses an equation and outputs
-				text that is passed to a text-to-speech converter. Despite some
-				possible ambiguities, I chose to prefer a "natural" reading style,
-				rather than the explicit reading of parentheses and groups that other
-				equation readers employ.
-			</div>
-
-			<div class="block-subheading">
-				Lab software
-			</div>
-
-			<div class="block">
-				<p>
-					Lab software written in Win32 C++ to communicate with spectrometers,
-					stepper motors, and data acquisition boards. These were used
-					to measure experimental data. Data processing and visualization
-					included on-screen draggable controls to adjust processing
-					parameters in real time.
-				</p>
-			</div>
-			<div class="figure">
-				<img src="portfolio/software/eagle.jpg" />
-			</div>
-			<div class="caption">
-				Data acquisition software, here used to measure optical
-				signals scanned over a 2d plane. The parameters can be adjusted
-				handles by manipulating control handles in real time. 
-				Multiple scans can be combined to form 3D images.
-			</div>
-		</div>
 	</div>
 </body>
 </html>
