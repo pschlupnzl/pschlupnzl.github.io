@@ -41,6 +41,62 @@ body {
    max-height: 14px;
 }
 
+.contact-email::before {
+   content: "\2709";
+   margin-right: 0.25em;
+}
+
+.contact-linkedin::before {
+   content: "in";
+   display: inline-block;
+   margin-right: 0.3em;
+   font-size: 0.8em;
+   width: 1.4em;
+   height: 1.4em;
+   line-height: 1.4em;
+   color: white;
+   background: #0073b1;
+   border-radius: 0.2em;
+   vertical-align: text-bottom;
+}
+
+.contact-github::before {
+   content: "";
+   display: inline-block;
+   margin-right: 0.3em;
+   width: 16px;
+   height: 16px;
+   background-image: url("GitHub-Mark-32px.png");
+   background-size: 16px 16px;
+   vertical-align: text-bottom;
+}
+
+.contact-researchgate .icon-anchor {
+   display: inline-block;
+   font-size: 0.8em;
+   width: 1.4em;
+   height: 1.4em;
+   line-height: 1.4em;
+   color: white;
+   background-color: #0cb;
+   border-radius: 0.2em;
+   font-family: serif;
+   vertical-align: text-bottom;
+}
+
+   .contact-researchgate .icon-anchor::before {
+      content: "R";
+      position: relative;
+      top: 0.1em;
+   }
+
+   .contact-researchgate .icon-anchor::after {
+      content: "G";
+      position: relative;
+      top: -0.5em;
+      font-size: 0.5em;
+   }
+
 /** Main */
 
 .main {
