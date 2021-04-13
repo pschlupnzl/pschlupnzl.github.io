@@ -24,6 +24,14 @@ body {
    margin-left: 8%;
 }
 
+.center-content {
+   text-align: center;
+}
+
+   .center-content > * {
+      text-align: unset;
+   }
+
 /** Header */
 
 .header {
@@ -39,6 +47,11 @@ body {
 .lasercanvas-button img {
    max-width: 14px;
    max-height: 14px;
+}
+
+.contact-resume::before {
+   content: "\270E";
+   margin-right: 0.25em;
 }
 
 .contact-email::before {
@@ -109,6 +122,7 @@ body {
       font-weight: bold;
       font-size: 1.15em;
       border-bottom: 1px solid #e7e7e7;
+      text-align: center;
    }
 
    .main .block-subheading {
