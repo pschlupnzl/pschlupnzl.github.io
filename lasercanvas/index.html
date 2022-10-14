@@ -1,26 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-   <head>
-      <title>Philip Schlup - LaserCanvas</title>
-      <link rel="icon" type="image/png" href="favicon.png" />
-      <meta charset="utf-8">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33EWM4CDK"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <title>Philip Schlup - LaserCanvas</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="utf-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z33EWM4CDK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-Z33EWM4CDK');
-      </script>
-   </head>
-   <body>
-      <div id="root" style="width: 100%; height: 100%;"></div>
-      <script src="lasercanvas.min.js"></script>
-      <script>
-         (function (root) {
-            window.LaserCanvas.render(root);
-         }(document.getElementById("root")));
-      </script>
-   </body>
+      gtag("config", "G-Z33EWM4CDK");
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="lasercanvas-web.js"></script>
+  </body>
 </html>
