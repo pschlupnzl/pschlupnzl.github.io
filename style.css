@@ -2,6 +2,7 @@ body {
    margin: 0;
    padding: 0;
    color: #353535;
+   font-size: 1.2rem;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -50,14 +51,22 @@ body {
    max-height: 14px;
 }
 
+.contact-resume::before,
+.contact-publications::before,
+.contact-email::before {
+   margin-right: 0.25em;
+}
+
 .contact-resume::before {
    content: "\270E";
-   margin-right: 0.25em;
+}
+
+.contact-publications::before {
+   content: "\274F";
 }
 
 .contact-email::before {
    content: "\2709";
-   margin-right: 0.25em;
 }
 
 .contact-linkedin::before {
